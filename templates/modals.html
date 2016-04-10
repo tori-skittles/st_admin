@@ -1,0 +1,186 @@
+<!-- Edit Form -->
+
+<div id="editFormModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Edit Form</h4>
+                      </div>
+                      <div class="modal-body" style="height: 600px;">
+                        <div class="col-lg-10" style="padding-bottom: 20px;">
+				 <div class="col-lg-3">Name: </div>
+				 <div class="col-lg-9">
+					<input id="form_name" class="col-lg-12" type="text" value="" />
+				 </div>
+			</div> 
+			<div class="col-lg-10" style="padding-bottom: 20px;">
+                                 <div class="col-lg-3">Description: </div>
+                                 <div class="col-lg-9">
+                                        <input id="form_description" class="col-lg-12" type="text" value="" />
+                                 </div>
+                        </div> 
+			<div class="col-lg-10" style="padding-bottom: 20px;">
+                                <div class="col-lg-3">Form Fields: </div>
+                                <div class="col-lg-9"></div>
+                        </div>
+			<div class="col-lg-10" style="padding-bottom: 20px;">
+				<div class="col-lg-6">
+					<input id="add_field_name" class="col-lg-12" type="text" value="" placeholder="Feild Name" />
+				</div>
+				<div class="col-lg-5">
+					<select id="add_field_type" class="col-lg-12 form-control">
+						<option value="range">Range</option>
+						<option value="text">Text</option>
+						<option value="radio">Checklist</option>
+						<option value="number">Number</option>
+						<option value="select">Dropdown</option>
+					</select>
+	
+				</div>
+				<div class="col-lg-1">
+					<button id="addField" class="btn btn-primary">Add Field</button>
+				</div>
+			 </div>
+			 <div id="form_content" class="col-lg-12" style="overflow-y: auto; height: 380px; padding-bottom: 20px; padding-right: 0px; padding-left: 0px;">
+			
+			</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" id="saveAsNew" class="btn btn-primary saveEditForm">Save as New</button>
+				<button type="button" id="saveAsUpdate" class="btn btn-primary saveEditForm">Update Existing</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+<!-- Add project -->
+
+<div id = "addProjectModal"class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Create Project</h4>
+                      </div>
+                      <div class="modal-body" style="height: 300px; ">
+                        <div class="col-lg-12" style="padding-bottom: 20px;">
+                          <input id='add_project_name' type="text" class="form-control" placeholder="Project Name" aria-describedby="sizing-addon1">
+			</div>
+
+                        <div class="col-lg-12" style="padding-bottom: 20px;">
+                          <textarea id="add_project_description" placeholder="Description" rows="4" cols="73"></textarea>
+			</div>
+
+			<div id="form_box" class=""></div>
+			<div id="site_box" class=""></div>
+			<div id="user_box" class=""></div>
+			</div>
+                      <div class="modal-footer">
+                                <button type="button" id="saveAddProject" class="btn btn-primary">Save</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+<!-- edit user -->
+<div id="editUserModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Edit User</h4>
+                      </div>
+                      <div class="modal-body" style="height: 600px; ">
+			<div class="col-lg-12" style="padding-bottom: 20px;">
+                          <input id='edit_user_first' type="text" class="form-control" placeholder="First Name" aria-describedby="sizing-addon1">
+                        </div>
+
+                        <div class="col-lg-12" style="padding-bottom: 20px;">
+                          <input id="edit_user_last" type="text" class="form-control" placeholder="Last Name" aria-describedby="sizing-addon1">
+                        </div>
+                        <div class="col-lg-12" style="padding-bottom: 20px;">
+                          <input id="edit_user_email" type="text" class="form-control" placeholder="Email" aria-describedby="sizing-addon1">
+                        </div>
+                        <div class="col-lg-12" style="padding-bottom: 20px;">
+                          <input id="edit_user_password" type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1">
+                        </div>
+                         <div class="col-lg-12" style="padding-bottom: 20px; padding-left: 0px;">
+                                <span class="col-lg-1" id="">Admin?</span>
+                                <div class="col-lg-10"></div>
+                                <input id="edit_user_admin" class="col-lg-1" type="checkbox">
+                         </div>
+                      </div>
+                      <div class="modal-footer">
+                                <button type="button" id="saveEditUser" class="btn btn-primary">Save</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+<!-- add user -->
+<!-- Modal -->
+                <div id="addUserModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Create User</h4>
+                      </div>
+                      <div class="modal-body" style="text-align: center; height: 400px">
+                        <div class="col-lg-12" style="padding-bottom: 20px;">
+                          <input id='add_user_first' type="text" class="form-control" placeholder="First Name" aria-describedby="sizing-addon1">
+                        </div>
+
+                        <div class="col-lg-12" style="padding-bottom: 20px;">
+                          <input id="add_user_last" type="text" class="form-control" placeholder="Last Name" aria-describedby="sizing-addon1">
+                        </div>
+                        <div class="col-lg-12" style="padding-bottom: 20px;">
+                          <input id="add_user_email" type="text" class="form-control" placeholder="Email" aria-describedby="sizing-addon1">
+                        </div>
+                        <div class="col-lg-12" style="padding-bottom: 20px;">
+                          <input id="add_user_password" type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1">
+                        </div>
+
+                         <div class="col-lg-12" style="padding-bottom: 20px;">
+                                <span class="col-lg-1" id="" style="padding-left: 0px;">Admin?</span>
+                                <div class="col-lg-10"></div>
+                                <input id="add_user_admin" class="col-lg-1" type="checkbox" style="padding-right: 0px;">
+                         </div>
+                      </div>
+                      <div class="modal-footer">
+                                <button type="button" id="saveAddUser" class="btn btn-primary">Save</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
