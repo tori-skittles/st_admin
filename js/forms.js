@@ -71,6 +71,15 @@ function displayForms( forms )
 		});
 	});
 
+	$('#addNewForm').off().click( function( e ){
+		
+		$('#form_name').val('');
+
+
+
+	});
+
+
 	$('.edit_form').off().click( function( e ){
 		
 		var tr = $(e.target).parents('tr');
@@ -247,7 +256,8 @@ function displayForms( forms )
                                 dataType: 'json',
                                 success: function(response){
                                         $('#editFormModal').modal('hide');
-                                }
+                                	displayForms();
+				}
 
                         });		
 	
@@ -295,6 +305,7 @@ function displayForms( forms )
                                 dataType: 'json',
                                 success: function(response){
                                         $('#editFormModal').modal('hide');
+					displayForms();
                                 }
 
                         });
